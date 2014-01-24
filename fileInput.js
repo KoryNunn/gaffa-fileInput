@@ -67,7 +67,7 @@ FileInput.prototype.enabled = new Gaffa.Property({
         }
     },
     value: true
-);
+});
 FileInput.prototype.text = new Gaffa.Property(function(viewModel, value){
     doc.find(viewModel.renderedElement, 'label')[0].textContent = value ? value : '';
 });
