@@ -9,6 +9,10 @@
   "peerDependencies": {
     "gaffa": "0.x.x"
   },
+  "dependencies": {
+    "crel": "x.x.x",
+    "doc-js": "x.x.x"
+  },
   "author": "",
   "license": "BSD"
 }
