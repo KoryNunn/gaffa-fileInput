@@ -7,15 +7,6 @@ function setValue(event){
         viewModel = input.parentElement.viewModel,
         files = Array.prototype.slice.call(input.files);
 
-    for (var i = files.length - 1; i >= 0; i--) {
-        var file = files[i];
-        if(viewModel.maxSize.value && file.size / 1024 / 1024 > viewModel.maxSize.value){
-            window.teabag(file.name + ' is too large to upload. The maximum file size accepted is ' + viewModel.maxSize.value + 'MB', 'alert', true);
-            files.splice(i,1);
-            i--;
-        }
-    };
-
     viewModel.files.set(files);
     viewModel.inputElement.value = null;
 }
