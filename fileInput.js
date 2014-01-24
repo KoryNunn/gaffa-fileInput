@@ -57,14 +57,17 @@ FileInput.prototype.accept = new Gaffa.Property(function(viewModel, value){
         input.removeAttribute('accept');
     }
 });
-FileInput.prototype.enabled = new Gaffa.Property(function(viewModel, value){
-    var input = viewModel.inputElement;
-    if (!value){
-        input.setAttribute('disabled', 'disabled');
-    }else{
-        input.removeAttribute('disabled');
-    }
-});
+FileInput.prototype.enabled = new Gaffa.Property({
+    update: function(viewModel, value){
+        var input = viewModel.inputElement;
+        if (!value){
+            input.setAttribute('disabled', 'disabled');
+        }else{
+            input.removeAttribute('disabled');
+        }
+    },
+    value: true
+);
 FileInput.prototype.text = new Gaffa.Property(function(viewModel, value){
     doc.find(viewModel.renderedElement, 'label')[0].textContent = value ? value : '';
 });
