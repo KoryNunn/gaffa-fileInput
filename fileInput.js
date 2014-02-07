@@ -9,6 +9,7 @@ function setValue(event){
 
     viewModel.files.set(files);
     viewModel.inputElement.value = null;
+    viewModel.triggerActions('change');
 }
 
 function FileInput(){}
