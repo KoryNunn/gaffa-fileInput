@@ -1,13 +1,13 @@
 {
   "name": "gaffa-fileinput",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A file input view for Gaffa.",
   "main": "fileInput.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "gaffa": "0.x.x"
+    "gaffa": "^1.0.1"
   },
   "dependencies": {
     "crel": "x.x.x",

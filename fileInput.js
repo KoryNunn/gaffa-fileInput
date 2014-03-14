@@ -28,8 +28,6 @@ FileInput.prototype.render = function(){
     this.inputElement = input;
 
     this.renderedElement = renderedElement;
-
-    this.__super__.render.apply(this, arguments);
 };
 FileInput.prototype.multiple = new Gaffa.Property(function(viewModel, value){
     var input = doc.find(viewModel.renderedElement, 'input')[0];
