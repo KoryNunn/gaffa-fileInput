@@ -1,6 +1,6 @@
 {
   "name": "gaffa-fileinput",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A file input view for Gaffa.",
   "main": "fileInput.js",
   "scripts": {
